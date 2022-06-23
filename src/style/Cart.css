@@ -15,3 +15,7 @@ td {
     border-bottom: 1px solid #ddd;
     border-collapse:collapse;
 }
+
+.cart-empty-container {
+    color: white;
+}

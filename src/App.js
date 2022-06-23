@@ -12,6 +12,7 @@ function App() {
 
   const [cartList, setCartList] = useState([]);
   const [itemQuantity, setItemQuantity] = useState(0);
+  const [totalCost, setTotalCost] = useState(0);
 
   const addToCartList = (item, quantity) => {
     console.log(cartList);
@@ -39,6 +40,15 @@ function App() {
     console.log(itemQuantity);
   }
 
+  const updateTotalCost = () => {
+    const cost =  cartList.reduce((acc, obj) => 
+      acc += obj.quantity*obj.price
+    , 0)
+    ;
+    setTotalCost(cost);
+    console.log(totalCost);
+  }
+
   const deleteItem = (e) => {
     let id = e.currentTarget.getAttribute('id');
     id = parseInt(id);
@@ -49,7 +59,8 @@ function App() {
   }
 
   useEffect(() => {
-    updateItemQuantity()
+    updateItemQuantity();
+    updateTotalCost();
   },[cartList]);
 
   return (
@@ -63,7 +74,7 @@ function App() {
           <Route index element={<Home/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/shop' element={<Shop/>}/>
-          <Route path='/cart' element={<Cart cartList={cartList} deleteItem={deleteItem}/>}/>
+          <Route path='/cart' element={<Cart cartList={cartList} deleteItem={deleteItem} totalCost={totalCost}/>}/>
           <Route path='/shop/:id' element={<ItemDetail addToCartList={addToCartList}/>}/>
         </Routes>        
       </div>

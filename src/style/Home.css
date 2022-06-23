@@ -1,0 +1,21 @@
+.home-container {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.home-container div {
+    margin-left: 5rem;
+    color: white;
+}
+
+.home-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.total-cost-container {
+    margin-top: 2rem;
+    color: white;
+}
