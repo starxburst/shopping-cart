@@ -1,0 +1,35 @@
+.product-card-container {    
+    width: 25vw;
+    margin: 0 1rem 0 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.product-card-container:hover {
+    background-color: #8c8e929d;
+}
+
+.image-container {
+    height: 20vh;
+    padding-top: 3rem;
+    object-fit: cover;
+}
+
+.product-image {
+    height: 20vh;
+    max-width: 25vw;
+}
+
+.title-container {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.price-container {
+    font-size: 1rem;
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+}

@@ -1,0 +1,17 @@
+.cart-table {
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+}
+
+.cart-table img{
+    width: 10vw;
+    min-width: 100px;
+}
+
+td {
+    padding: 0 1rem 0 1rem;
+    border-bottom: 1px solid #ddd;
+    border-collapse:collapse;
+}

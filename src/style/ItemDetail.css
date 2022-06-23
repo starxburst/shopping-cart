@@ -1,0 +1,44 @@
+.loading {
+    color: white;
+    font-size: 5rem;
+}
+
+.item-detail-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    margin-top: 2rem;
+}
+
+.item-image-container {
+    width: 35vw;
+    min-width: 500px;
+}
+
+.item-image {
+    width: 20vw;
+}
+
+.detail-container {
+    width: 30vw;
+}
+
+.item-description {
+    font-size: 1rem;
+}
+
+.purchase-container-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.purchase-container {
+    display: flex;
+    justify-content: center;
+}
+
+.quantity-controller {
+    margin-left: 2rem;
+}
