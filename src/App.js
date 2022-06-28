@@ -71,7 +71,7 @@ function App() {
           <Nav itemQuantity={itemQuantity}/>
         </div>
         <Routes>
-          <Route path ='/' index element={<Home/>}/>
+          <Route path ='/shopping-cart/' index element={<Home/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/shop' element={<Shop/>}/>
           <Route path='/cart' element={<Cart cartList={cartList} deleteItem={deleteItem} totalCost={totalCost}/>}/>
